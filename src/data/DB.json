@@ -1,10 +1,5 @@
 [
 	{
-		"name": "Archivo de tormentas",
-		"price": 130000,
-		"id": 1
-	},
-	{
 		"name": "El imperio final",
 		"price": 86000,
 		"id": 2
@@ -15,7 +10,7 @@
 		"price": 120000,
 		"thumbnail": "img",
 		"code": 2020,
-		"stock": 5,
+		"stock": 10000,
 		"id": 3
 	}
 ]

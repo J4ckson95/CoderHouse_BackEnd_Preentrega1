@@ -57,7 +57,6 @@ export default class ProductManager {
         try {
             await this.#validateId(Id)
             const productDelate = this.#Products.filter((element) => element.id !== Id)
-            console.log(productDelate);
             await fs.promises.writeFile(this.path, JSON.stringify(productDelate, null, "\t"), "utf-8")
             return productDelate
         } catch (e) { console.log(`(delate)) Error e: ${e}`); }
