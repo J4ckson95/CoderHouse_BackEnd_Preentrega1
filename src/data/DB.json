@@ -1,0 +1,21 @@
+[
+	{
+		"name": "Archivo de tormentas",
+		"price": 130000,
+		"id": 1
+	},
+	{
+		"name": "El imperio final",
+		"price": 86000,
+		"id": 2
+	},
+	{
+		"title": "Amanecer Rojo",
+		"description": "Libro",
+		"price": 120000,
+		"thumbnail": "img",
+		"code": 2020,
+		"stock": 5,
+		"id": 3
+	}
+]
