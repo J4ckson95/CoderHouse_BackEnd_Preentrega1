@@ -7,5 +7,5 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.use("/api/products", productRouter)
-app.use("./api/carts", cartRouter)
+app.use("/api/carts", cartRouter)
 app.listen(8080, () => console.log("Running Server ..."))
