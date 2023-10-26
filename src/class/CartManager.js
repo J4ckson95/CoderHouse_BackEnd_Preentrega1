@@ -29,12 +29,17 @@ export default class CartManager {
             else newCart.id = this.#Carts[this.#Carts.length - 1].id + 1
             this.#Carts.push(newCart)
             await fs.promises.writeFile(this.path, JSON.stringify(this.#Carts, null, "\t"), "utf-8")
+            return true
         } catch (e) { console.log(`(createCart)) Error no se pudo crear el nuevo carro, error: ${e.message}`); }
     }
     async addProductsToTheCart(idCart, idProduct, quantity) {
         try {
-            await this.#getCarts()
-
+            const [product, id] = await this.getCartById(idCart)
+            const indexProduct = this.#Carts[id].products.findIndex(element => element.id === idProduct)
+            if (indexProduct === -1) this.#Carts[id].products.push({ id: idProduct, quantity: quantity })
+            else this.#Carts[id].products[indexProduct].quantity += quantity
+            fs.promises.writeFile(this.path, JSON.stringify(this.#Carts, null, "\t"), "utf-8")
+            return true
         } catch (e) { console.log(`(addProduct/cart)) Error no se pudo agregar los productos al carro, error: ${e.message}`); }
     }
 }

@@ -4,7 +4,16 @@
 		"id": 1
 	},
 	{
-		"products": [{"name": "jason"}],
+		"products": [
+			{
+				"id": 5,
+				"quantity": 70
+			},
+			{
+				"id": 2,
+				"quantity": 20
+			}
+		],
 		"id": 2
 	},
 	{

@@ -1,16 +1,29 @@
 [
 	{
-		"name": "El imperio final",
-		"price": 86000,
-		"id": 2
+		"title": "Archivo de tormentas",
+		"description": "Libro",
+		"price": 120000,
+		"thumbnail": "img",
+		"code": 2020,
+		"stock": 10,
+		"id": 1
 	},
 	{
 		"title": "Amanecer Rojo",
 		"description": "Libro",
 		"price": 120000,
 		"thumbnail": "img",
-		"code": 2020,
-		"stock": 10000,
+		"code": 2021,
+		"stock": 10,
+		"id": 2
+	},
+	{
+		"title": "Dune",
+		"description": "Libro",
+		"price": 120000,
+		"thumbnail": "img",
+		"code": 2022,
+		"stock": 10,
 		"id": 3
 	}
 ]

@@ -25,7 +25,7 @@ export default class ProductManager {
         this.#Products.push(newProduct)
         try {
             await fs.promises.writeFile(this.path, JSON.stringify(this.#Products, null, "\t"), "utf-8")
-            return console.log(`(add)) Producto agregado correctamente con el id: ${newProduct.id}`);
+            return true
         } catch (e) { console.log(`(add)) Error agregando el producto con codigo:${newProduct.code} `); }
     }
     async getProducts() {
